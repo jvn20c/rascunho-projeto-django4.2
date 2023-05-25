@@ -39,9 +39,7 @@ Na raiz do projeto e com o ambiente virtual `venv` ativo, execute o seguinte com
 ```bash
 $ python manage.py runserver
 ```
-(-d é um parâmetro para executar o docker-compose em segundo plano)
-
-E acesse o servidor de desenvolvimento em:
+... e acesse o servidor de desenvolvimento em:
 ```bash
 http://localhost:8000/
 ```
