@@ -1,8 +1,17 @@
 # [rascunho-projeto-django4.2](/)
 
-### Requisitos
+### Pré-requisitos
 
+- Git
 - Python v3.8.10
+
+### Clonando o repositório
+
+Clone o repositório e mude para diretório recém-criado.
+
+```bash
+$ git clone https://github.com/jvn20c/rascunho-projeto-django4.2.git && cd rascunho-projeto-django4.2/
+```
 
 ### Criando seu ambiente virtual
 
@@ -32,6 +41,14 @@ Para realizar as migrações.
 
 ```bash
 $ python manage.py migrate
+```
+
+### (OPCIONAL) Criar um superusuário
+
+Para criar um super-usuário e ter acesso à /admin/.
+
+```bash
+$ python manage.py createsuperuser
 ```
 
 ## Executando o projeto
