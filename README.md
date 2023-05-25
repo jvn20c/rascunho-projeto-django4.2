@@ -9,7 +9,7 @@
 Para criar o ambiente virtual:
 
 ```bash
-$ python3 -m venv ./venv
+$ python3 -m venv .venv
 ```
 
 Agora vamos ativá-lo em nosso terminal:
