@@ -1,0 +1,11 @@
+{% extends "animais/base.html" %}
+
+{% block content %}
+<div class="container">
+  <h2>Você desconectou da sua conta!</h2>
+  <div class="border-top pt-3">
+    <a class="text-muted" href="{% url 'user-login' %}">Conectar-se novamente.</a>
+  </div>
+</div>
+
+{% endblock content %}

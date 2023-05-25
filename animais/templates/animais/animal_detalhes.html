@@ -1,0 +1,20 @@
+{% extends "animais/base.html" %}
+{% block content %}
+<h1>Animal # {{object.id}}</h1>
+<div class="card my-4">
+  <div class="card-body">
+    <h5 class="card-title">{{ object.nome }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ object.autor }}</h6>
+    <p class="card-text">{{ object.descricao }}</p>
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{ object.atualizado_em|date:"F d, Y" }}
+    </h6>
+  </div>
+</div>
+{% if object.autor == user or user.is_staff %}
+<div class="col-4">
+    <a class="btn btn-outline-info" href="{% url 'animais-editar' object.id %}">Editar</a>
+    <a class="btn btn-outline-danger" href="{% url 'animais-excluir' object.id %}">Excluir</a>
+</div>
+{% endif %}
+{% endblock content %}

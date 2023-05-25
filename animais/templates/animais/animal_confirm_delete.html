@@ -1,0 +1,23 @@
+{% extends "animais/base.html" %}
+
+{% block content %}
+<div class="container">
+  <form method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <legend class="mb-4">Tem certeza de que deseja excluir?</legend>
+      <h2>{{object}}</h2>
+      {{ form }}
+    </fieldset>
+    <div class="form-group py-3">
+      <input class="btn btn-outline-danger" type="submit" value="Excluir" />
+    </div>
+  </form>
+  <div class="border-top pt-3">
+    <a class="text-muted" href="{% url 'animais-home' %}"
+      >Cancelar</a
+    >
+  </div>
+</div>
+
+{% endblock content %}
